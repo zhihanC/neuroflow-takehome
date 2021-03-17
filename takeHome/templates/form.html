@@ -2,10 +2,12 @@
 <p>Your username is "test"</p>
 <p>Your password is "test"</p>
 <p>*** Be sure to omit the quotation marks! ***</p>
+<!-- The URL in the action attribute of the form needs to be changed for each user -->
+<!-- Keep the /verify endpoint. -->
 <form action="http://127.0.0.1:5000/verify" method="post">
-  <label for="firstname">Username:</label>
+  <label for="username">Username:</label>
   <input type="text" id="username" name="username" placeholder="Username" />
-  <label for="lastname">Password:</label>
+  <label for="password">Password:</label>
   <input type="text" id="password" name="password" placeholder="Password" />
   <button type="submit">Login</button>
 </form>
